@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = uzantonomon
+	email = uzantonomon@gmail.com
+	signingkey = 5C40DA0C419C9F01
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	program = gpg
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
