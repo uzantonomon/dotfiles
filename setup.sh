@@ -11,10 +11,10 @@ rm -rf ~/Desktop ~/Music ~/Public ~/Templates ~/Documents ~/Downloads ~/Pictures
 rm -rf  ~/.gitconfig
 ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 
-rm -rf ~/.vim
-mkdir -p ~/.vim/colors
+rm -rf ~/.config/nvim
+mkdir -p ~/.config/nvim/colors
 git clone https://github.com/sickill/vim-monokai.git /tmp/vim-monokai
-cp /tmp/vim-monokai/colors/monokai.vim ~/.vim/colors/
-ln -sf ~/dotfiles/vim/vimrc ~/.vimrc
+cp /tmp/vim-monokai/colors/monokai.vim ~/.config/nvim/colors
+ln -sf ~/dotfiles/neovim/init.vim ~/.config/nvim/init,vim
 
 dconf load /com/gexperts/Tilix/ < ~/dotfiles/tilix/tilix.dconf
