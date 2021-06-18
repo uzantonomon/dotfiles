@@ -15,6 +15,9 @@ rm -rf ~/.config/nvim
 mkdir -p ~/.config/nvim/colors
 git clone https://github.com/sickill/vim-monokai.git /tmp/vim-monokai
 cp /tmp/vim-monokai/colors/monokai.vim ~/.config/nvim/colors
-ln -sf ~/dotfiles/neovim/init.vim ~/.config/nvim/init,vim
+ln -sf ~/dotfiles/neovim/init.vim ~/.config/nvim/init.vim
+
+rm -rf ~/.tmux.conf
+ln -sf ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 dconf load /com/gexperts/Tilix/ < ~/dotfiles/tilix/tilix.dconf
