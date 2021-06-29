@@ -21,3 +21,5 @@ rm -rf ~/.tmux.conf
 ln -sf ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 dconf load /com/gexperts/Tilix/ < ~/dotfiles/tilix/tilix.dconf
+
+sudo apt install ansible -y
